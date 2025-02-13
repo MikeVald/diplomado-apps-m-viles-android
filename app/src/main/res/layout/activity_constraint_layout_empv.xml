@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".excercise.home.edgarmichaelperezvaldez.ejercicio2.ConstraintLayoutActivityEMPV">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glImageTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEndCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".85" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Husky Siberiano"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/glHeader"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"
+        app:layout_constraintEnd_toEndOf="@id/glEndCL"/>
+
+    <ImageView
+        android:id="@+id/ivIcono"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/husky_3"
+        app:layout_constraintTop_toTopOf="@+id/glImageTop"
+        app:layout_constraintBottom_toBottomOf="@id/glImage"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"
+        app:layout_constraintEnd_toEndOf="@id/glEndCL"/>
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="El husky siberiano es una raza de perro de trabajo originaria del norte de Siberia en Rusia. Este perro fue creado por la tribu Chukchi como perro de trabajo para tirar de los trineos a través de largas distancias durante sus partidas de caza, sirviendo así como vehículo de transporte rápido para las presas en la vuelta al poblado."
+        app:layout_constraintTop_toBottomOf="@id/glContent"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"
+        app:layout_constraintEnd_toEndOf="@id/glEndCL"/>
+
+    <Button
+        android:id="@+id/btnExitCL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        app:layout_constraintTop_toBottomOf="@id/glFooter"
+        app:layout_constraintEnd_toEndOf="@id/glEndCL"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

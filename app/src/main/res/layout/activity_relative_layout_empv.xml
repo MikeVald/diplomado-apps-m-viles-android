@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".excercise.home.edgarmichaelperezvaldez.ejercicio2.RelativeLayoutActivityEMPV">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa texto para alejar a los perritos "
+        android:layout_above="@+id/etDistance"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"/>
+    <EditText
+        android:id="@+id/etDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Aqui"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/ivDogTwo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/husky"
+        android:layout_toRightOf="@id/etDistance"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/ivDogOne"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/husky"
+        android:layout_toLeftOf="@id/etDistance"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/btnExitRLEMPV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:layout_below="@id/etDistance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+    </RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".excercise.home.edgarmichaelperezvaldez.ejercicio2.GraphicComponentsActivityEMPV">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glImageTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEndCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".85" />
+
+    <TextView
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/tvHeaderGC"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Formulario\n Hotel para perros"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/glHeader"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"
+        app:layout_constraintEnd_toEndOf="@id/glEndCL"/>
+
+    <ImageView
+        android:id="@+id/ivIcono"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/husky_2"
+        app:layout_constraintTop_toBottomOf="@id/glImageTop"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"
+        app:layout_constraintEnd_toEndOf="@id/glEndCL"
+        app:layout_constraintBottom_toTopOf="@id/glImage"/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el nombre de su mascota"
+        app:layout_constraintTop_toBottomOf="@id/glImage"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"
+        app:layout_constraintEnd_toEndOf="@id/glEndCL"/>
+
+    <ImageButton
+        android:id="@+id/ibAcceso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:contentDescription="Información de cliente"
+        app:layout_constraintTop_toBottomOf="@id/glContent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/cbTerminos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Aceptar términos y condiciones"
+        app:layout_constraintTop_toBottomOf="@+id/spDias"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"/>
+
+    <TextView
+        android:id="@+id/tvJuguetes"
+        app:layout_constraintTop_toBottomOf="@id/ibAcceso"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"
+        app:layout_constraintEnd_toEndOf="@+id/glEndCL"
+        android:text="¿Qué juguetes prefiere tu mascota?"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/rgOptions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvJuguetes"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/glEndCL">
+
+        <RadioButton
+            android:id="@+id/rbOp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelota" />
+
+        <RadioButton
+            android:id="@+id/rbOp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuerda" />
+
+        <RadioButton
+            android:id="@+id/rbOp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disco" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvDias"
+        app:layout_constraintTop_toBottomOf="@id/rgOptions"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"
+        app:layout_constraintEnd_toEndOf="@+id/glEndCL"
+        android:text="¿Cuántos días te quedarás?"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spDias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvDias"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"
+        app:layout_constraintEnd_toEndOf="@id/glEndCL"/>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        app:layout_constraintBottom_toTopOf="@id/glFooter"
+        app:layout_constraintEnd_toEndOf="@id/glEndCL"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        app:layout_constraintTop_toBottomOf="@id/glFooter"
+        app:layout_constraintStart_toStartOf="@id/glStartCL"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
