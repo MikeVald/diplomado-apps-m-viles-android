@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Module4Eqp2"
         tools:targetApi="31">
         <activity
+            android:name=".excercise.home.edgarmichaelperezvaldez.homework.ConfirmationActivityEMPV"
+            android:exported="false" />
+        <activity
+            android:name=".excercise.home.edgarmichaelperezvaldez.homework.RegisterActivityEMPV"
+            android:exported="false" />
+        <activity
             android:name=".excercise.home.edgarmichaelperezvaldez.ejercicio2.RecyclerView.RecyclerViewActivityEMPV"
             android:exported="false" />
         <activity
@@ -37,9 +43,6 @@
             android:name=".excercise.home.edgarmichaelperezvaldez.MainEMPVActivity"
             android:exported="false" />
         <activity
-            android:name=".excercise.home.fernando_hernandez.InitialActivityFHC"
-            android:exported="false" />
-        <activity
             android:name=".excercise.home.edgarmichaelperezvaldez.SecondActivityEMPV"
             android:exported="false" />
         <activity
@@ -47,9 +50,6 @@
             android:exported="false" />
         <activity
             android:name=".excercise.home.edgarmichaelperezvaldez.InitialActivityEMPV"
-            android:exported="false" />
-        <activity
-            android:name=".excercise.home.fernando_hernandez.SecondActivityFHC"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
