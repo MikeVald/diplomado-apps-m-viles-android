@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">APPEMPV</string>
+    <string name="member3">Perez Valdez Edgar Michael</string>
+    <string name="btnBack">Regresar</string>
+    <string name="btnExit">Salir</string>
+    <string name="btnActivity">Lanzar actividad</string>
+
+    <string name="sign_up_error_name">Dato requerido</string>
+    <string name="sign_up_error_lastname">Dato requerido</string>"
+    <string name="sign_up_error_email">Dato requerido o formato incorrecto</string>
+    <string name="sign_up_error_password">Dato requerido</string>
+    <string name="cb_sign_in_single_text">¿Eres soltero/a?</string>
+    <string name="et_sign_in_name">Ingrese nombre</string>
+    <string name="iv_sign_up">Icono registrarte</string>
+    <string name="et_sign_in_lastname">Ingrese apellido</string>
+    <string name="et_sign_in_email">Ingrese correo electrónico</string>
+    <string name="et_sign_in_password">Ingrese contraseña</string>"
+    <string name="btn_sign_up">Registrarse</string>
+    <string name="tv_sign_up_devices_title">Dispositivos electrónicos</string>
+
+    <string name="log_in_error_email">Dato requerido o formato incorrecto</string>
+    <string name="log_in_error_password">Dato requerido</string>
+    <string name="log_in_email">Ingrese correo</string>
+    <string name="et_log_in_password">Ingrese contraseña</string>
+    <string name="btnLogIn">Ingresar</string>
+    <string name="tv_go_sign_in">¿Aun no tienes cuenta?</string>
+
+    <string name="final_exercise_home_title">Bienvenido %s</string>
+    <string name="final_exercise_home_title_no_name">Bienvenido!</string>
+    <string name="final_exercise_home_title_tv_single">Tu estado civil es soltero/a</string>
+    <string name="final_exercise_home_title_tv_not_single">Tu estado civil es distinto a soltero/a</string>"
+    <string name="final_exercise_home_title_login_info">Información de login</string>
+    <string name="final_exercise_tv_email_title">Email:</string>
+    <string name="final_exercise_tv_password_title">Contraseña:</string>
+    <string name="final_exercise_about_you_title">Sobre ti</string>
+    <string name="final_exercise_tv_lastname_title">Apellido:</string>
+    <string name="final_exercise_tv_devices_title">Dispositivos:</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".excercise.home.edgarmichaelperezvaldez.finalexercise.LogInFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHeader"
+        app:layout_constraintGuide_percent="0.2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glFooter"
+        app:layout_constraintGuide_percent="0.7"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        app:layout_constraintGuide_percent="0.15"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        app:layout_constraintGuide_percent="0.85"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:src="@drawable/ic_login"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/glHeader"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <EditText
+        android:fontFamily="@font/agbalumo"
+        android:id="@+id/etLogInEmail"
+        android:hint="@string/log_in_email"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        app:layout_constraintTop_toTopOf="@id/glHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etLogInPassword"
+        android:fontFamily="@font/agbalumo"
+        android:textColorHint="@color/black"
+        android:hint="@string/et_log_in_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        app:layout_constraintTop_toBottomOf="@id/etLogInEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnLogIn"
+
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/btnLogIn"
+        android:textSize="30sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/glFooter"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"/>
+
+    <TextView
+        android:id="@+id/tvGoSignIn"
+        android:fontFamily="@font/agbalumo"
+        android:textColor="@color/blue"
+        android:text="@string/tv_go_sign_in"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        app:layout_constraintTop_toBottomOf="@id/btnLogIn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.R
 import com.desswapp.module4eqp2.excercise.home.edgarmichaelperezvaldez.ejercicio2.HomeExerciseTwoActivity
+import com.desswapp.module4eqp2.excercise.home.edgarmichaelperezvaldez.finalexercise.OnboardingActivity
 import com.desswapp.module4eqp2.excercise.home.edgarmichaelperezvaldez.homework.RegisterActivityEMPV
 
 class MainEMPVActivity : AppCompatActivity() {
@@ -42,6 +43,10 @@ class MainEMPVActivity : AppCompatActivity() {
                 }
                 R.id.btnHomeworkEMPV -> {
                     val intent = Intent( this, RegisterActivityEMPV::class.java)
+                    startActivity(intent)
+                }
+                R.id.btnFinalExerciseEMPV -> {
+                    val intent = Intent( this, OnboardingActivity::class.java)
                     startActivity(intent)
                 }
                 R.id.btnExitEMPV -> {

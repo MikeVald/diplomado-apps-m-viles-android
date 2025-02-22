@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/darker_gray"
+    tools:context=".excercise.home.edgarmichaelperezvaldez.finalexercise.SignUpFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHeader"
+        app:layout_constraintGuide_percent="0.2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glFooter"
+        app:layout_constraintGuide_percent="0.85"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        app:layout_constraintGuide_percent="0.15"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        app:layout_constraintGuide_percent="0.85"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:contentDescription="@string/iv_sign_up"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/glHeader"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        android:src="@drawable/ic_signin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <EditText
+        android:id="@+id/etSignInName"
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/agbalumo"
+        android:autofillHints=""
+        android:hint="@string/et_sign_in_name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        app:layout_constraintTop_toTopOf="@id/glHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etSignInLastname"
+        android:autofillHints=""
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/agbalumo"
+        android:inputType="textPersonName"
+        android:hint="@string/et_sign_in_lastname"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        app:layout_constraintTop_toBottomOf="@id/etSignInName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etSignInEmail"
+        android:autofillHints=""
+        android:hint="@string/et_sign_in_email"
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/agbalumo"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        app:layout_constraintTop_toBottomOf="@id/etSignInLastname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/cbSignInSingle"
+        android:text="@string/cb_sign_in_single_text"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/agbalumo"
+        app:layout_constraintTop_toBottomOf="@id/etSignInEmail"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvDevicesTitle"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_sign_up_devices_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cbSignInSingle"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintBottom_toTopOf="@id/spAge"/>
+
+    <Spinner
+        android:id="@+id/spAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintTop_toBottomOf="@id/tvDevicesTitle"/>
+
+
+    <EditText
+        android:id="@+id/etSignInPassword"
+        android:autofillHints=""
+        android:hint="@string/et_sign_in_password"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/agbalumo"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        app:layout_constraintTop_toBottomOf="@id/spAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/adlam_display"
+        android:text="@string/btn_sign_up"
+        android:textSize="30sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/glFooter"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

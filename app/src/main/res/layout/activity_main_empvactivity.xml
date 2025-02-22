@@ -84,7 +84,6 @@
     <Button
         android:id="@+id/btnFinalExerciseEMPV"
         android:layout_width="0dp"
-        android:enabled="false"
         android:text="Ejercicio final"
         android:layout_marginTop="20dp"
         android:layout_height="wrap_content"

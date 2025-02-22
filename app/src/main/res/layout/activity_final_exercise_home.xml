@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".excercise.home.edgarmichaelperezvaldez.finalexercise.FinalExerciseHomeActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHeader"
+        app:layout_constraintGuide_percent="0.1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glContent"
+        app:layout_constraintGuide_percent="0.3"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glFooter"
+        app:layout_constraintGuide_percent="0.8"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        app:layout_constraintGuide_percent="0.1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glCenter"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:fontFamily="@font/adlam_display"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glCenter"
+        app:layout_constraintBottom_toTopOf="@id/glHeader"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:text="@string/final_exercise_home_title_login_info"
+        android:textColor="@color/red"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:fontFamily="@font/adlam_display"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glCenter"
+        app:layout_constraintBottom_toTopOf="@id/glContent"/>
+
+
+    <TextView
+        android:id="@+id/tvEmailTitle"
+        android:layout_marginTop="20dp"
+        android:text="@string/final_exercise_tv_email_title"
+        android:textColor="@color/green"
+
+        android:fontFamily="@font/adlam_display"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glCenter"
+        app:layout_constraintTop_toBottomOf="@id/glContent"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="0px"
+        android:fontFamily="@font/agbalumo"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glCenter"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailTitle"/>
+
+    <TextView
+        android:id="@+id/tvPasswordTitle"
+        android:text="@string/final_exercise_tv_password_title"
+        android:textColor="@color/green"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginTop="20dp"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glCenter"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"/>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="0px"
+        android:fontFamily="@font/agbalumo"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glCenter"
+        app:layout_constraintTop_toBottomOf="@id/tvPasswordTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/final_exercise_about_you_title"
+        android:textColor="@color/red"
+        android:fontFamily="@font/adlam_display"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/glCenter"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        app:layout_constraintBottom_toTopOf="@id/glContent"/>
+
+    <TextView
+        android:id="@+id/tvLastNameTitle"
+        android:text="@string/final_exercise_tv_lastname_title"
+        android:textColor="@color/green"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/glContent"
+        app:layout_constraintStart_toStartOf="@id/glCenter"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"/>
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="0dp"
+        android:fontFamily="@font/agbalumo"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvLastNameTitle"
+        app:layout_constraintStart_toStartOf="@id/glCenter"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"/>
+
+    <TextView
+        android:id="@+id/tvDevicesTitle"
+        android:text="@string/final_exercise_tv_devices_title"
+        android:textColor="@color/green"
+        android:fontFamily="@font/adlam_display"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvLastName"
+        app:layout_constraintStart_toStartOf="@id/glCenter"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"/>
+
+    <TextView
+        android:id="@+id/tvDevices"
+        android:layout_width="0dp"
+        android:fontFamily="@font/agbalumo"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvDevicesTitle"
+        app:layout_constraintStart_toStartOf="@id/glCenter"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"/>
+
+    <TextView
+        android:id="@+id/tvSingle"
+        android:fontFamily="@font/agbalumo"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvDevices"
+        app:layout_constraintStart_toStartOf="@id/glCenter"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
